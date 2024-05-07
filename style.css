@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    height: 70px;
+    background: red;
+}
+
+footer{
+    position: absolute;
+    bottom: 10;
+    width: 100vw;
+    height: 70px;
+    background: red;
+}
+
+aside{
+
+    z-index: 100;
+
+    transition: 1s;
+    width: 40px;
+    height: 100vh;
+    background: green;
+
+    position: fixed;
+    left: 0;
+
+    display: none;
+}
+
+.imagem{
+    width: 150px;
+    height: 150px;
+    background: black;
+}
+
+.conteudo{
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 70px;
+    min-height: 100vh;
+    min-width: 100vw;
+    justify-content: space-around;
+}
+
+.card{
+    width: 230px;
+    height: 400px;
+    margin: 20px 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+
+    border-radius: 8px;
+    background: rgb(239, 239, 239);
+
+    box-shadow: 4px 5px 9px 2px #0000003d;
+}
+
+.titulo{
+    font-weight: bolder;
+}
+
+.informacoes{
+    padding-top: 10px;
+    font-weight: 200;
+    color: rgb(16, 16, 16);
+}
+
+.dados-cartao{
+    text-align: center;
+    background: rgb(219, 219, 219);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width:414px){
+    header, footer{
+        display: none;
+    }
+
+    aside{
+        display: block;
+    }
+}

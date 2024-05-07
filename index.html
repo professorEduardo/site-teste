@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <aside id="aside">
+        <button onclick="mudar()">Clique aqui</button>
+    </aside>
+    <div class="conteudo">
+        <div class="card">
+            <div class="imagem"></div>
+            <div class="dados-cartao">
+                <div class="titulo">Placeat teneque quasi quas veniam ab tempore</div>
+                <div class="inforamacoes">Lorem ipsum, dolnima cupiditate quia animi, possimus, amet ab aliquid unde dolor voluptate impedit! Repellendus mollitia doloribus minima?</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imagem"></div>
+            <div class="dados-cartao">
+                <div class="titulo">Placeat teneque quasi quas veniam ab tempore</div>
+                <div class="informacoaes">Lorem ipsum, dolnima cupiditate quia animi, possimus, amet ab aliquid unde dolor voluptate impedit! Repellendus mollitia doloribus minima?</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imagem"></div>
+            <div class="dados-cartao">
+                <div class="titulo">Placeat teneque quasi quas veniam ab tempore</div>
+                <div class="informacoes">Lorem ipsum, dolnima cupiditate quia animi, possimus, amet ab aliquid unde dolor voluptate impedit! Repellendus mollitia doloribus minima?</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imagem"></div>
+            <div class="dados-cartao">
+                <div class="titulo">Placeat teneque quasi quas veniam ab tempore</div>
+                <div class="informacoes">Lorem ipsum, dolnima cupiditate quia animi, possimus, amet ab aliquid unde dolor voluptate impedit! Repellendus mollitia doloribus minima?</div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+
+    <script>
+        function mudar(){
+            const aside =  document.getElementById("aside")
+
+            if(aside.style.width == "40px"){
+                aside.style.width = "100vw"
+            }else{
+                aside.style.width = "40px"
+            }
+        }
+    </script>
+</body>
+</html>
